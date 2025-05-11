@@ -1,0 +1,2 @@
+- name: MD to PDF
+  uses: purplebearddan/ghAction-md2pdf@v1.1
