@@ -1,2 +1,32 @@
-- name: Markdown to PDF
-  uses: valtyr/pandoc-action@v0.1-alpha
+name: Convertir Markdown a PDF
+
+on:
+  push:
+    paths:
+      - '**.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Pandoc y LaTeX (para exportar PDF)
+        run: |
+          sudo apt update
+          sudo apt install -y pandoc texlive texlive-xetex
+
+      - name: Convertir Markdown a PDF
+        run: |
+          for file in $(find . -name '*.md'); do
+            pandoc "$file" -o "${file%.md}.pdf"
+          done
+
+      - name: Subir PDFs al repositorio (commit automático)
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add *.pdf
+          git commit -m "Generar PDFs automáticamente"
+          git push
