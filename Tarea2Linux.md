@@ -20,3 +20,9 @@
 
   ![](https://github.com/diegosy12/imagenesLinux/blob/main/linux/idioma1.png)
   ![](https://github.com/diegosy12/imagenesLinux/blob/main/linux/idiomaTeclado.png)
+
+- Menu de acceso universal y accesibilidad
+
+  ![](https://github.com/diegosy12/imagenesLinux/blob/main/linux/menuAccesibilidad.png)
+  ![](https://github.com/diegosy12/imagenesLinux/blob/main/linux/menuAccesibilidadActivado.png)
+  ![](https://github.com/diegosy12/imagenesLinux/blob/main/linux/tecladoPantalla.png)
