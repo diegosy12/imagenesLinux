@@ -72,7 +72,7 @@
 
 - Fichero usuarios
 
-  !()[https://github.com/diegosy12/imagenesLinux/blob/main/linux/carpetaUsuarios.png]
+  ![](https://github.com/diegosy12/imagenesLinux/blob/main/linux/carpetaUsuarios.png)
 
 - Cambiar de usuarioi a root y volver al ususario por consola
 
